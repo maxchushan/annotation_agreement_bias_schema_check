@@ -1,11 +1,11 @@
-# adrank_jd017
+# annotation_agreement_bias_schema_check
 
 **校验广告召回与排序工程师·标注一致性与标注者偏差的字段结构并列出缺失项。**
 
-`adrank_jd017` —— 从样本里推断广告召回与排序工程师·标注一致性与标注者偏差应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
+`annotation_agreement_bias_schema_check` —— 从样本里推断广告召回与排序工程师·标注一致性与标注者偏差应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`adrank_jd017.py` 拷走就能用
+- 单文件，`annotation_agreement_bias_schema_check.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install maxchushan-adrank_jd017
+pip install maxchushan-annotation_agreement_bias_schema_check
 ```
 
 装完直接用命令名调用：
 
 ```bash
-adrank_jd017 --help
+annotation_agreement_bias_schema_check --help
 ```
 
-也可以不用安装，直接把 `adrank_jd017.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `annotation_agreement_bias_schema_check.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ adrank_jd017 --help
 ## 用法
 
 ```bash
-python adrank_jd017.py --file input.txt
-python adrank_jd017.py --text "示例内容"
-python adrank_jd017.py --file input.txt --json
+python annotation_agreement_bias_schema_check.py --file input.txt
+python annotation_agreement_bias_schema_check.py --text "示例内容"
+python annotation_agreement_bias_schema_check.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python adrank_jd017.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_adrank_jd017.py
+python test_annotation_agreement_bias_schema_check.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_adrank_jd017.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/maxchushan/adrank_jd017>
+- GitHub 仓库：<https://github.com/maxchushan/annotation_agreement_bias_schema_check>
 
 ---
 
@@ -79,7 +79,7 @@ python test_adrank_jd017.py
 maxchushan 做广告召回与排序工程师·标注一致性与标注者偏差相关的问题，方向对标百川智能的初级广告召回与排序工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://maxchushan.github.io>
-- 仓库：<https://github.com/maxchushan/adrank_jd017>
+- 仓库：<https://github.com/maxchushan/annotation_agreement_bias_schema_check>
 
 ## 许可
 

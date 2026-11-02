@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "maxchushan-adrank_jd017"
+name = "maxchushan-annotation_agreement_bias_schema_check"
 version = "0.1.0"
 description = "从样本里推断广告召回与排序工程师·标注一致性与标注者偏差应有的字段集合，逐字段检查存在性与类型，缺失项单独列出"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://maxchushan.github.io"
-Repository = "https://github.com/maxchushan/adrank_jd017"
-Issues = "https://github.com/maxchushan/adrank_jd017/issues"
+Repository = "https://github.com/maxchushan/annotation_agreement_bias_schema_check"
+Issues = "https://github.com/maxchushan/annotation_agreement_bias_schema_check/issues"
 
 [project.scripts]
-adrank_jd017 = "adrank_jd017:main"
+annotation_agreement_bias_schema_check = "annotation_agreement_bias_schema_check:main"
 
 [tool.setuptools]
-py-modules = ["adrank_jd017"]
+py-modules = ["annotation_agreement_bias_schema_check"]
